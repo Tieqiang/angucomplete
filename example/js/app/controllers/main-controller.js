@@ -253,5 +253,27 @@ app.controller('MainController', ['$scope', '$http',
             {name: 'Zimbabwe', code: 'ZW'}
         ];
 
+        $scope.autoComplteOptons = {
+            width:'800px',
+            drownType:'table',
+            columnsDef:[{
+                field:'name',
+                title:'家族姓氏',
+                width:'20px'
+            },{
+                field:'code',
+                title:'名字',
+                width:'20px'
+            },{
+                field:'twitter',
+                title:'twitter',
+                width:'20px'
+            },{
+                field:'pic',
+                title:'图片地址',
+                width:'20px'
+            }]
+        }
+
     }
 ]);
